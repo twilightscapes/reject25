@@ -193,7 +193,7 @@ export default config({
         text2: fields.text({ label: 'Text 2', multiline: true }),
         subheading3: fields.text({ label: 'Subheading3' }),
         text3: fields.text({ label: 'Text 3', multiline: true }),
-        showTwocol: fields.checkbox({ label: 'Show 2-col', description: 'use 2-col or stacked', defaultValue: true }),
+        showTwocol: fields.checkbox({ label: 'Layout', description: 'use 2-col or stacked', defaultValue: false }),
 
         
       },

@@ -1,12 +1,11 @@
-backgroundImage: /images/styleapps/backgroundImage.svg
-siteFont: Orbitron
+siteFont: Black Han Sans
 borderRadius: 10px
 lightBg: rgba(192, 185, 185, 0.57)
 lightAccent2: rgba(0, 0, 0, 1)
-darkBg: rgba(34, 34, 34, 1)
+darkBg: rgba(25, 52, 87, 0.8)
 darkAccent2: rgba(0, 0, 0, 1)
 lightHeader: rgba(0, 0, 0, 0.9)
-darkHeader: rgba(0, 0, 0, 0.9)
+darkHeader: rgba(12, 21, 90, 0.84)
 lightText: rgba(0, 0, 0, 1)
 darkText: rgba(243, 231, 231, 1)
 customCSS: >-

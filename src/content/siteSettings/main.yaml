@@ -5,9 +5,9 @@ MAX_POSTS: 3
 MAX_POSTS_PER_PAGE: 20
 showHeader: true
 showLogo: true
-showHome: false
+showHome: true
 showTheme: false
-showSwitch: false
+showSwitch: true
 showSearch: false
 showFooter: false
 showCheck: true

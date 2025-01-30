@@ -1,7 +1,7 @@
-showName: true
-showPhone: true
+showName: false
+showPhone: false
 showMessage: true
-showUpload: true
+showUpload: false
 showExtraField: false
 showExtraField2: false
 showMap: false

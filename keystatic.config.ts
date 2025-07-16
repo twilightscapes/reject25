@@ -157,7 +157,7 @@ export default config({
           description: 'Optional: Leave blank for alphabetical sorting'
         }),
 
-        isWebmention: fields.checkbox({ label: 'Is Webmention', defaultValue: true }),
+
       },
       slugField: 'friendlyName'
       
@@ -256,7 +256,7 @@ export default config({
     
     menuItems: collection({
       label: 'Menu Items',
-      path: 'src/content/menu/*',
+      path: 'src/content/menuItems/*',
       slugField: 'name', 
       schema: {
         name: fields.text({ label: 'Name' }),
@@ -356,7 +356,7 @@ export default config({
         showSwitch: fields.checkbox({ label: 'Show Switch', description: 'Hide/Show the layout selector', defaultValue: true }),
         showSearch: fields.checkbox({ label: 'Show Search', description: 'Hide/Show the search in the header', defaultValue: true }),
         showFooter: fields.checkbox({ label: 'Show Footer', description: 'Hide/Show the Footer', defaultValue: true }),
-        showCheck: fields.checkbox({ label: 'Hide Pirate promo', description: 'Hide/Show the Pirate info', defaultValue: true }),
+        showCheck: fields.checkbox({ label: 'Show Video Portal', description: 'Show Video Portal instead of Map Section', defaultValue: true }),
         showTitles: fields.checkbox({ label: 'Show Post Titles', description: 'Hide/Show the post titles', defaultValue: false }),
         showDates: fields.checkbox({ label: 'Show Dates', description: 'Hide/Show the post dates', defaultValue: true }),
         enableImageBlur: fields.checkbox({ 
@@ -378,6 +378,9 @@ export default config({
           defaultValue: false,
         }),
         siteUrl: fields.text({ label: 'Site Url', description: 'The address to your website' }),
+        title: fields.text({ label: 'Home Page Title', defaultValue: 'Home Page Title', }),
+        description: fields.text({ label: 'SEO/App Description', description: 'The description is used as the description of the homepage for SEO, and on Android in the PWA install dialogue window', }),
+        
         name: fields.text({ label: 'App Name' }),
         shortName: fields.text({ label: 'Short Name' }),
 
@@ -391,7 +394,8 @@ export default config({
           directory: 'public/images/pwa',
           publicPath: '/images/pwa',
         }),
-        description: fields.text({ label: 'SEO/App Description', description: 'The description is used as the title of the homepage for SEO, and on Android in the PWA install dialogue window', }),
+
+  
 
         divider2: fields.empty(),
 
@@ -434,7 +438,7 @@ export default config({
     }),
     home: singleton({
       label: 'Home Page',
-      path: 'src/content/homepage/',
+      path: 'src/content/home/',
       schema: {
 
         sectionOrdering: fields.array(
@@ -443,7 +447,7 @@ export default config({
             options: [
               { label: 'Feature Section', value: 'feature' },
               { label: 'Bio Section', value: 'bio' },
-              { label: 'App Section', value: 'app' },
+              { label: 'Map/Video Section', value: 'app' },
               { label: 'Gallery Section', value: 'gallery' },
               { label: 'Posts Section', value: 'posts' },
               { label: 'Resume Section', value: 'resume' },
@@ -648,7 +652,7 @@ export default config({
       },
     }),        
     
-    styleAppearance: singleton({
+    styleapps: singleton({
       label: 'Appearance',
       path: 'src/content/styleapps/',
       schema: {
@@ -902,7 +906,7 @@ ui: {
       'menuItems',
       'socialCard',
       'photoSettings',
-      'styleAppearance',
+      'styleapps',
       'language',
       'resumeSettings',
       'socialLinks',
